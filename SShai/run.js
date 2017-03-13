@@ -1,24 +1,8 @@
 var exercise = require('./exercise.js');
-
-// ----------------------------------------
-//   QUESTION 01
-//   Return a string that says "Hello!"
-// ----------------------------------------
 var response = exercise.hello();
 console.log(response);
-
-// ----------------------------------------
-//   QUESTION 02
-//   Return an array of numbers
-// ----------------------------------------
 var response = exercise.numberArray();
 console.log(response);
-
-// ----------------------------------------
-//   QUESTION 03
-//   Return an object with
-//   a 'name' and 'age' property
-// ----------------------------------------
 var response = exercise.nameAndAge();
 console.log(response);
 
