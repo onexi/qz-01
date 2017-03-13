@@ -67,7 +67,7 @@ exercise.concatenate = function(string1, string2, string3){
     //   Return the concatenation of
     //   string1, string2, string3
     // ----------------------------------------
-    return 'Error: Question 07 not implemented';
+    return string1 + string2 + string3;
 };
 
 exercise.greaterThanSix = function(someNumbers){
