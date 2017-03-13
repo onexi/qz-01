@@ -60,7 +60,7 @@ exercise.concatenate = function(string1, string2, string3){
     //   Return the concatenation of
     //   string1, string2, string3
     // ----------------------------------------
-    return string1+string2+string3;
+    return ''+string1+string2+string3;
 };
 
 exercise.greaterThanSix = function(someNumbers){
@@ -198,7 +198,7 @@ exercise.getNumberOfZipCodesWith = function(payroll,num){
         if (el[4].includes(num)) res.push(el[4]);
     });
     return res;
-    
+
 };
 
 
