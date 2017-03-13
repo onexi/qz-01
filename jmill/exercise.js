@@ -99,7 +99,9 @@ exercise.getNames = function(people){
     //   You should return
     //     ['peter','bruce','clark','diana']
     // ----------------------------------------
-    return 'Error: Question 09 not implemented';
+    var peoplenames = [];
+    people.forEach(function(element,i){peoplenames.push(people[i].name);});
+    return peoplenames;
 };
 
 exercise.getSalaryTotal = function(people){
