@@ -13,7 +13,8 @@ exercise.numberArray = function(){
     //   QUESTION 02
     //   Return an array of numbers
     // ----------------------------------------
-    return 'Error: Question 02 not implemented';
+    var numArray = [0,1,2,3,4,5];
+    return numArray;
 };
 
 exercise.nameAndAge = function(){
