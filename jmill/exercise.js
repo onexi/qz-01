@@ -133,7 +133,11 @@ exercise.sortNumbers = function(someNumbers){
     //   return the sorted array
     //   Ascending or descenging.
     // ----------------------------------------
-    return 'Error: Question 11 not implemented';
+    var sortedArray = someNumbers.slice();
+    function sortNumber(a,b) {
+        return a - b;
+    };
+    return sortedArray.sort(sortNumber);
 };
 
 exercise.executeCallback = function(callback){
