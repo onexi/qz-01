@@ -5,7 +5,7 @@ exercise.hello = function(){
     //   QUESTION 01
     //   Return a string that says "Hello!"
     // ----------------------------------------
-    return 'Hello';
+    return 'Hello!';
 };
 
 exercise.numberArray = function(){
@@ -206,11 +206,12 @@ exercise.getTotalPayroll = function(payroll){
    var tot =  payroll.reduce(function(previous,current) {
      //   console.log(current[3]);
      //   console.log(previous[3]);
-        var total = Number(previous[3]) + Number(current [3]);
+        var total = parseInt(previous[3]) + parseInt(current [3]);
         return Number(total);
 
     },0);  
-return tot;
+    return Number(tot);
+
 };
 
 exercise.getEarningsAbove = function(payroll,target){
@@ -229,6 +230,9 @@ exercise.getNumberOfZipCodesWith = function(payroll,num){
     //   Return the number of zip codes
     //   with 'num' anywhere in them
     // ----------------------------------------
+
+
+
     return 'Error: Question 16 not implemented';
 };
 
