@@ -188,7 +188,14 @@ exercise.getNumberOfZipCodesWith = function(payroll,num){
     //   Return the number of zip codes
     //   with 'num' anywhere in them
     // ----------------------------------------
-    return 'Error: Question 16 not implemented';
+    var zipcount = 0;
+    // payroll.forEach(function(element,i){
+    //     if (payroll[i][4].indexOf(num) > -1){
+    //         zipcount+= 1;
+    //     };
+    // };);
+
+    return zipcount;
 };
 
 
