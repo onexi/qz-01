@@ -120,7 +120,7 @@ exercise.getSalaryTotal = function(people){
     //     10000
     // ----------------------------------------
     var res = people.reduce(function(pre, cur){
-        return Number(cur)+ Number(pre);
+        return Number(pre)+ Number(cur.salary);
     },0);
 
     return res;
@@ -133,7 +133,9 @@ exercise.sortNumbers = function(someNumbers){
     //   return the sorted array
     //   Ascending or descenging.
     // ----------------------------------------
-    return someNumbers.sort();
+    return someNumbers.sort(function(a, b){
+        return Number(a) > Number(b);
+    });
 };
 
 exercise.executeCallback = function(callback){
@@ -150,7 +152,10 @@ exercise.getPersonAndJob = function(payroll){
     //   Return an array of people and jobs
     //  [['person', 'job'], ['person,job'];
     // ----------------------------------------
-    return 'Error: Question 13 not implemented';
+    var res = payroll.map(function(el){
+        return [el[1], el[2]];
+    });
+    return res;
 };
 
 exercise.getTotalPayroll = function(payroll){
@@ -159,7 +164,12 @@ exercise.getTotalPayroll = function(payroll){
     //   Return the total payroll
     //   as an integer, use reduce
     // ----------------------------------------
-    return 'Error: Question 14 not implemented';
+    var res = payroll.reduce(function(pre, cur){
+        return pre + Number(cur[3]);
+    },0);
+
+    return res;
+
 };
 
 exercise.getEarningsAbove = function(payroll,target){
@@ -168,7 +178,12 @@ exercise.getEarningsAbove = function(payroll,target){
     //   Return the number of people with
     //   earnings above target
     // ----------------------------------------
-    return 'Error: Question 15 not implemented';
+    var res = payroll.filter( function(el){
+        return el[3] > target;
+    });
+
+    return res.length;
+
 };
 
 exercise.getNumberOfZipCodesWith = function(payroll,num){
@@ -177,7 +192,13 @@ exercise.getNumberOfZipCodesWith = function(payroll,num){
     //   Return the number of zip codes
     //   with 'num' anywhere in them
     // ----------------------------------------
-    return 'Error: Question 16 not implemented';
+
+    var res = [];
+    payroll.forEach(function(el, i){
+        if (el[4].includes(num)) res.push(el[4]);
+    });
+    return res;
+    
 };
 
 
