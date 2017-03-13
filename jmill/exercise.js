@@ -121,7 +121,9 @@ exercise.getSalaryTotal = function(people){
     //   you should return
     //     10000
     // ----------------------------------------
-    return 'Error: Question 10 not implemented';
+    var sumsalaries = 0;
+    people.map(function(element,i){sumsalaries += people[i].salary;})
+    return sumsalaries;
 };
 
 exercise.sortNumbers = function(someNumbers){
