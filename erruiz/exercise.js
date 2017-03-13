@@ -211,8 +211,51 @@ exercise.getNumberOfZipCodesWith = function(payroll,num){
     //   Return the number of zip codes
     //   with 'num' anywhere in them
     // ----------------------------------------
-    return 'Error: Question 16 not implemented';
+    var getZipCodes = function(arr){
+        return arr[4];
+    };
+
+    var zipCodes = payroll.map(getZipCodes);
+
+    var splitZip = function(element){
+        return element.split('');
+    };
+
+    /*
+    var count = 0;
+
+    for(var i = 0;i<splitZip.length;i++){
+        var zip = zipCodes[i];
+        for(var j = 0;j<zip.length;j++){
+            var match = 0;
+            if(splitZip[i][j]==num){
+                match += 1;
+            }
+        }
+        if(match!=0){
+            count += 1;
+        }
+    }
+    */
+    
+    //returns the zip codes in an array of arrays, split up into their corresponding digits
+    var zipDigits = zipCodes.map(splitZip);
+
+    var isEqual = function(element){
+        return element == num;
+    };
+
+    return zipDigits.map(isEqual);
 };
 
+var payroll = [
+ [1, 'abby hall', 'city manager ', '98538', '02132'],
+ [2, 'dana bell', 'police chief ', '83942', '02136'],
+ [3, 'cora cook', 'city attorney', '98538', '02132'],
+ [4, 'judy king', 'fire director', '70073', '02090']
+];
+var num = '3';
+
+console.log(exercise.getNumberOfZipCodesWith(payroll,num));
 
 module.exports = exercise;
