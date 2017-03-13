@@ -16,7 +16,7 @@ exercise.numberArray = function(){
     //   QUESTION 02
     //   Return an array of numbers
     // ----------------------------------------
-    return 1232134123
+    return [1,2,4,8,9];
 };
 
 exercise.nameAndAge = function(){
@@ -202,7 +202,17 @@ exercise.getNumberOfZipCodesWith = function(payroll,num){
     //   Return the number of zip codes
     //   with 'num' anywhere in them
     // ----------------------------------------
-    return 'Error: Question 16 not implemented';
+    num=num.toString(num)
+    function hasNum(zipcode){
+        return zipcode.includes(num);
+    }
+    var zipcodes=payroll.map(function getZipcodes(person){
+        return person[4];
+    });
+    
+    var filtered=zipcodes.filter(hasNum);
+    // return num;
+    return filtered.length;
 };
 
 
