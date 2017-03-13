@@ -197,7 +197,7 @@ exercise.getNumberOfZipCodesWith = function(payroll,num){
     payroll.forEach(function(el, i){
         if (el[4].includes(num)) res.push(el[4]);
     });
-    return res.length;
+    return res.length; 
 
 };
 
