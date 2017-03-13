@@ -25,7 +25,7 @@ exercise.nameAndAge = function(){
     //   Return an object with
     //   a 'name' and 'age' property
     // ----------------------------------------
-    return {'name':"Norah", 'age':100};
+    return [{'name':'Norah', 'age':100}];
 };
 
 exercise.objectArray = function(){
@@ -34,7 +34,7 @@ exercise.objectArray = function(){
     //   Return an array of empty objects
     //   The array can have any length you like.
     // ----------------------------------------
-    return [[],[]];
+    return [];
 };
 
 exercise.addProperty = function(someObject){
