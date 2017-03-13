@@ -107,9 +107,9 @@ exercise.getNames = function(people){
 exercise.getSalaryTotal = function(people){
     var final_sum=[];
     for (var i=0; i<people.length; i++){
-        return final_sum.push(people[i].salary);
+        final_sum.push(people[i].salary);
     }
-    final_sum.reduce(function(tracker, current){
+    var final = final_sum.reduce(function(tracker, current){
         return Number(tracker)+Number(current);
     });
     // ----------------------------------------
@@ -128,7 +128,7 @@ exercise.getSalaryTotal = function(people){
     //   you should return
     //     10000
     // ----------------------------------------
-    return final_sum;
+    return final;
 };
 
 exercise.sortNumbers = function(someNumbers){
@@ -191,13 +191,22 @@ exercise.getEarningsAbove = function(payroll,target){
 };
 
 exercise.getNumberOfZipCodesWith = function(payroll,num){
-    
+    var payrolls=[];
+    for (var i=0; i<payroll.length; i++){
+        payrolls.push(Number(payroll[i][4]));
+    }
+    var counter = 0
+    for (var j=0; j<payrolls.length; j++){
+        if j.split(indexOf(num)!==-1){
+            counter ++
+        }
+    }
     // ----------------------------------------
     //   QUESTION 16
     //   Return the number of zip codes
     //   with 'num' anywhere in them
     // ----------------------------------------
-    return 'Error: Question 16 not implemented';
+    return counter;
 };
 
 
