@@ -154,7 +154,12 @@ exercise.getPersonAndJob = function(payroll){
     //   Return an array of people and jobs
     //  [['person', 'job'], ['person,job'];
     // ----------------------------------------
-    return 'Error: Question 13 not implemented';
+    var peoplejobs = [];
+    payroll.forEach(function(element,i){
+        peoplejobs.push(
+            [payroll[i][1],payroll[i][2]]);
+    });
+    return peoplejobs;
 };
 
 exercise.getTotalPayroll = function(payroll){
