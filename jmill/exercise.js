@@ -5,7 +5,7 @@ exercise.hello = function(){
     //   QUESTION 01
     //   Return a string that says "Hello!"
     // ----------------------------------------
-    return 'Error: Question 01 not implemented';
+    return 'Hello!';
 };
 
 exercise.numberArray = function(){
