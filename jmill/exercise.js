@@ -49,7 +49,8 @@ exercise.addProperty = function(someObject){
     //   Add the property 'name' to someObject
     //   Give 'name' any value you like.
     // ----------------------------------------
-    return 'Error: Question 05 not implemented';
+    someObject['name'] = 'jonathan';
+    return someObject;
 };
 
 exercise.thirdElement = function(someArray){
