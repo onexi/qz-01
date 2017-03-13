@@ -36,7 +36,11 @@ exercise.objectArray = function(){
     //   Return an array of empty objects
     //   The array can have any length you like.
     // ----------------------------------------
-    return 'Error: Question 04 not implemented';
+    var emptyObject1;
+    var emptyObject2;
+    var emptyObject3;
+    var emptyArray = [emptyObject1,emptyObject2, emptyObject3]
+    return emptyArray;
 };
 
 exercise.addProperty = function(someObject){
