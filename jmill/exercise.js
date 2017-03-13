@@ -23,7 +23,11 @@ exercise.nameAndAge = function(){
     //   Return an object with
     //   a 'name' and 'age' property
     // ----------------------------------------
-    return 'Error: Question 03 not implemented';
+    var theObj = {
+        'name': 'jonathan',
+        'age': 30
+    };
+    return theObj;
 };
 
 exercise.objectArray = function(){
