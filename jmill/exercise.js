@@ -58,7 +58,7 @@ exercise.thirdElement = function(someArray){
     //   QUESTION 06
     //   Return the third element of array
     // ----------------------------------------
-    return 'Error: Question 06 not implemented';
+    return someArray[2];
 };
 
 exercise.concatenate = function(string1, string2, string3){
