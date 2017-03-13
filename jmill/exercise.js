@@ -177,7 +177,9 @@ exercise.getEarningsAbove = function(payroll,target){
     //   Return the number of people with
     //   earnings above target
     // ----------------------------------------
-    return 'Error: Question 15 not implemented';
+    var numTarg = payroll.filter(function(element,i){
+        return Number(payroll[i][3]) > target;});
+    return numTarg.length;
 };
 
 exercise.getNumberOfZipCodesWith = function(payroll,num){
