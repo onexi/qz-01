@@ -76,7 +76,10 @@ exercise.greaterThanSix = function(someNumbers){
     //   Filter array for values greater than 6
     //   Return the filtered array
     // ----------------------------------------
-    return 'Error: Question 08 not implemented';
+    var filteredArray = someNumbers.filter(function(element){
+        return element > 6;
+    })
+    return filteredArray;
 };
 
 exercise.getNames = function(people){
