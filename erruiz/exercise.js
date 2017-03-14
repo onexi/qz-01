@@ -220,32 +220,11 @@ exercise.getNumberOfZipCodesWith = function(payroll,num){
     var splitZip = function(element){
         return element.split('');
     };
-
-    /*
-    var count = 0;
-
-    for(var i = 0;i<splitZip.length;i++){
-        var zip = zipCodes[i];
-        for(var j = 0;j<zip.length;j++){
-            var match = 0;
-            if(splitZip[i][j]==num){
-                match += 1;
-            }
-        }
-        if(match!=0){
-            count += 1;
-        }
-    }
-    */
     
-    //returns the zip codes in an array of arrays, split up into their corresponding digits
+    //stores the zip codes in an array of arrays, split up into their corresponding digits
     var zipDigits = zipCodes.map(splitZip);
-
-    var isEqual = function(element){
-        return element == num;
-    };
-
-    return zipDigits.map(isEqual);
+    
+    return zipDigits;
 };
 
 var payroll = [
